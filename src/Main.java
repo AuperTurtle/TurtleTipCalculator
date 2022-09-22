@@ -28,9 +28,8 @@ public class Main {
         while (checkEnd != -1) {
             System.out.println("Enter a cost in dollars and cents, e.g. 12.50 (-1 to end):");
             checkEnd = scan.nextDouble();
-            String checkEndRounded = formatter.format(checkEnd);
             if (checkEnd > 0) {
-                totalCost = (totalCost + checkEndRounded);
+                totalCost = (totalCost + checkEnd);
                 System.out.println(totalCost);
             }
         }
